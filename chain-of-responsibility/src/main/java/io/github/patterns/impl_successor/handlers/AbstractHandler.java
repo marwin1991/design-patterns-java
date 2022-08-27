@@ -1,4 +1,4 @@
-package io.github.patterns.handlers;
+package io.github.patterns.impl_successor.handlers;
 
 import io.github.patterns.models.Tool;
 import lombok.RequiredArgsConstructor;

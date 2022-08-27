@@ -1,5 +1,5 @@
 package io.github.patterns.models;
 
-public enum Mytype {
+public enum ToolType {
     AXE, HOE, SHOVEL
 }
