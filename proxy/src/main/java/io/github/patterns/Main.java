@@ -10,7 +10,10 @@ public class Main {
     public static void main(String[] args) {
 
         LanInternet lan = new LanInternet();
-        Internet internet = new ProxyLanInternet(lan);
+
+        boolean test = Boolean.parseBoolean(System.getenv().get("TEST"));
+
+        Internet internet = test ? new LanInternet() : new ProxyLanInternet(lan);
         internet.connectTo("ceneo.pl");
         internet.connectTo("github.com");
 
